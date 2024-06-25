@@ -3,10 +3,10 @@ package com.coderscampus.assignment4;
 public class Student {
     private String studentName;
     private String course;
-    private Integer studentID;
-    private Integer grade;
+    private String studentID;
+    private String  grade;
 
-    Student(Integer studentID, String studentName, String course, Integer grade) {
+    Student(String studentID, String studentName, String course, String grade) {
         this.studentID = studentID;
         this.studentName = studentName;
         this.course = course;
@@ -21,11 +21,11 @@ public class Student {
         return course;
     }
 
-    public Integer getStudentID() {
+    public String  getStudentID() {
         return studentID;
     }
 
-    public Integer getGrade() {
+    public String  getGrade() {
         return grade;
     }
 }
