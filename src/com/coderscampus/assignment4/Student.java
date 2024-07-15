@@ -1,12 +1,12 @@
 package com.coderscampus.assignment4;
 
 public class Student {
-    private String studentName;
-    private String course;
-    private String studentID;
-    private String  grade;
+    private final String studentName;
+    private final String course;
+    private final String studentID;
+    private final int grade;
 
-    Student(String studentID, String studentName, String course, String grade) {
+    Student(String studentID, String studentName, String course, int grade) {
         this.studentID = studentID;
         this.studentName = studentName;
         this.course = course;
@@ -21,11 +21,16 @@ public class Student {
         return course;
     }
 
-    public String  getStudentID() {
+    public String getStudentID() {
         return studentID;
     }
 
-    public String  getGrade() {
+    public int getGrade() {
         return grade;
+    }
+
+    @Override
+    public String toString() {
+        return studentID + "," + studentName + "," + course + "," + grade;
     }
 }
